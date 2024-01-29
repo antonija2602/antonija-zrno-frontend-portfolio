@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="assets/img/favicon/favicon.ico"
+            type="image/x-icon" />
+
+        <!--=============== REMIXICONS ===============-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+            rel="stylesheet" />
+
+        <!--=============== CSS ===============-->
+        <link
+            rel="stylesheet"
+            href="assets/css/styles.css" />
+
+        <title>Antonija Zrno - Front-end developer Portfolio</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header
+            class="header"
+            id="header">
+            <nav class="nav container">
+                <a
+                    href="#"
+                    class="nav__logo"
+                    >Antonija <span>Zrno</span></a
+                >
+                <div
+                    class="nav__menu"
+                    id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a
+                                href="#home"
+                                class="nav__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#projects"
+                                class="nav__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#skills"
+                                class="nav__link"
+                                >Skills</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#about"
+                                class="nav__link"
+                                >About</a
+                            >
+                        </li>
+
+                        <li class="nav__item">
+                            <a
+                                href="#contact"
+                                class="nav__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <!-- == Close Button == -->
+                    <div
+                        class="nav__close"
+                        id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- == Toggle Button == -->
+                <div
+                    class="nav__toggle"
+                    id="nav-toggle">
+                    <i class="ri-menu-fold-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section
+                class="home section"
+                id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <div class="home__data">
+                            <h3 class="home__subtitle">Hello, I am</h3>
+                            <h1 class="home__title">Antonija Zrno</h1>
+                            <h3 class="home__education">Front-end developer</h3>
+                            <p class="home__description">
+                                As an enthusiastic self-taught front-end developer, I am seeking my first employment opportunity. <br /><br />
+                                With a foundation in HTML, CSS, and JavaScript, I've developed practical skills through hands-on projects and online courses. My unique blend of tenacity, eagerness to
+                                learn and couriosity sets me apart.
+                                <br /><br />
+                                If you are looking for someone who is passionate, adaptable and ready to bring a fresh perspective to your team, I would love to connect and create something amazing
+                                together.
+                            </p>
+                            <a
+                                href="#contact"
+                                class="button"
+                                >Contact
+                            </a>
+                        </div>
+                        <div class="home__social">
+                            <a
+                                href="https://github.com/antonija2602?tab=repositories"
+                                target="_blank"
+                                class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/antonija-zrno-az/"
+                                target="_blank"
+                                class="home__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__image">
+                        <img
+                            class="home__img"
+                            id="imageBlob"
+                            src="assets/img/woman.svg" />
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section
+                class="projects section"
+                id="projects">
+                <!-- <h3 class="section__subtitle"></h3> -->
+                <h2 class="section__title">Projects</h2>
+
+                <div class="projects__container container grid">
+                    <article class="projects__card">
+                        <img
+                            src="assets/img/cookme.png"
+                            alt="Cook the dinner"
+                            class="projects__img" />
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Under Construction</span>
+                            <h2 class="projects__title">"Cook the dinner"</h2>
+                            <p class="projects__paragraph">
+                                Thoughtful design ensures an exceptional user experience across all platforms. Whether on a laptop or smartphone, users can effortlessly search for their desired meal,
+                                enjoy the cooking process, and savor the meal afterward.
+                            </p>
+                            <div class="projects__button_container">
+                                <a
+                                    target="_blank"
+                                    href="https://cookthedinner.netlify.app/"
+                                    class="projects__button">
+                                    Demo <i class="ri-external-link-line"></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/antonija2602/cook-me"
+                                    class="projects__button">
+                                    Code <i class="ri-github-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img
+                            src="assets/img/notary.png"
+                            alt="Notary - learn about your book"
+                            class="projects__img" />
+                        <div class="projects__modal">
+                            <h2 class="projects__title">"Notary - learn about your book"</h2>
+
+                            <!-- <span class="projects__subtitle"></span> -->
+                            <p class="projects__paragraph">Using this tool you can explore how frequently individual words are repeated in your favorite book.</p>
+                            <div class="projects__button_container">
+                                <a
+                                    target="_blank"
+                                    href="https://notary-learnmoreaboutthebook.netlify.app/"
+                                    class="projects__button">
+                                    Demo <i class="ri-external-link-line"></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/antonija2602/notary"
+                                    class="projects__button">
+                                    Code <i class="ri-github-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img
+                            src="assets/img/foodiexpress.png"
+                            alt="Express delivery"
+                            class="projects__img" />
+                        <div class="projects__modal">
+                            <h2 class="projects__title">"FoodiExpress delivery"</h2>
+                            <!-- <span class="projects__subtitle"></span> -->
+                            <p class="projects__paragraph">Search for your desired dish and proceed to order it. Wait for it in the comfort of your home and we will deliver it to your doorstep.</p>
+                            <div class="projects__button_container">
+                                <a
+                                    target="_blank"
+                                    href="https://expressfoodie.netlify.app/"
+                                    class="projects__button">
+                                    Demo <i class="ri-external-link-line"></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/antonija2602/delivery-express"
+                                    class="projects__button">
+                                    Code <i class="ri-github-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img
+                            src="assets/img/searchandcook.png"
+                            alt="Search and cook"
+                            class="projects__img" />
+                        <div class="projects__modal">
+                            <h2 class="projects__title">"Search and cook"</h2>
+                            <!-- <span class="projects__subtitle"></span> -->
+                            <p class="projects__paragraph">
+                                Here's my initial version of a Recipe App—it may not have a modern look, but I take pride in its functionality. This project marks a significant learning experience for
+                                me, and I'm excited about the improvements and enhancements I plan to implement in future versions.
+                            </p>
+                            <div class="projects__button_container">
+                                <a
+                                    target="_blank"
+                                    href="https://searchandcookapp.netlify.app/"
+                                    class="projects__button">
+                                    Demo <i class="ri-external-link-line"></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/antonija2602/RecipeApp"
+                                    class="projects__button">
+                                    Code <i class="ri-github-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section
+                class="skills section"
+                id="skills">
+                <div class="skills__container container grid">
+                    <div class="skills__data">
+                        <!-- <h3 class="section__subtitle">Favourite <span>Skills</span></h3> -->
+                        <h2 class="section__title">My Skills</h2>
+                        <p class="skills__description">
+                            Explore my GitHub repositories containing a collection of projects I've developed while learning front-end development. Each repository showcases the progress and skills
+                            gained during my learning journey in the world of web development. <br /><br />
+                            Feel free to check out the code, provide feedback, or even collaborate on future projects!
+                        </p>
+                    </div>
+                    <div class="skills__content">
+                        <ol class="skills__group">
+                            <li class="skills__item">HTML & CSS</li>
+                            <li class="skills__item">Javascript</li>
+                            <li class="skills__item">Bootstrap</li>
+                        </ol>
+                        <ol
+                            class="skills__group"
+                            start="4">
+                            <li class="skills__item">Github</li>
+                            <li class="skills__item">Chat GPT</li>
+                        </ol>
+                    </div>
+                    <div class="skills__content_github">
+                        <a
+                            target="_blank"
+                            href="https://github.com/antonija2602?tab=repositories"
+                            class="button"
+                            >Github Repositories</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section
+                class="about section"
+                id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <!-- <h3 class="section__subtitle">My <span>Intro</span></h3> -->
+                        <h2 class="section__title">About Me</h2>
+                        <p class="about__description">
+                            Fueled by a passion for problem-solving and technology, I embarked on a self-taught journey into front-end development. <br />
+                            <br />
+                            I find immense joy in creating things, especially when technology and deep contemplation come together; that's where my highest passion lies. Currently focused on the
+                            front-end, I'm eagerly eyeing a transition to full-stack development in the future. <br /><br />
+                            I am committed to giving my best, and giving up is simply not an option.
+                        </p>
+                        <a
+                            href="#contact"
+                            class="button"
+                            >Contact Me</a
+                        >
+                    </div>
+                    <div class="about__image">
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <img
+                            class="about__img"
+                            id="imageBorder"
+                            src="assets/img/a5.jpg" />
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section
+                class="contact section"
+                id="contact">
+                <h3 class="section__subtitle">Get in <span>Touch</span></h3>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <form
+                        action=""
+                        class="contact__form"
+                        id="contact-form">
+                        <div class="contact__group">
+                            <input
+                                type="text"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your name"
+                                name="user_name"
+                                class="contact__input" />
+                            <input
+                                type="email"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your email"
+                                name="user_email"
+                                class="contact__input" />
+                        </div>
+
+                        <textarea
+                            name="user_project"
+                            autocomplete="off"
+                            required
+                            placeholder="Enter your message"
+                            class="contact__input"></textarea>
+
+                        <p
+                            class="contact__message"
+                            id="contact-message"></p>
+
+                        <button
+                            type="submit"
+                            class="button contact__button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Antonija <span>Zrno</span></h1>
+                    <h2 class="footer__education">Front-end developer</h2>
+                </div>
+                <div class="footer__social">
+                    <a
+                        href="https://www.facebook.com/spin2602"
+                        target="_blank"
+                        class="footer__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/antonija2602?tab=repositories"
+                        target="_blank"
+                        class="home__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/antonija-zrno-az/"
+                        target="_blank"
+                        class="home__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+                <span class="footer__copy"> &copy; Copyright Antonija Zrno. All rights reserved </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a
+            href="#"
+            class="scrollup"
+            id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== EMAIL JS ===============-->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
