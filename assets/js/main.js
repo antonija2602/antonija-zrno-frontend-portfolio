@@ -1,32 +1,57 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById("nav-menu")
-const navToggle = document.getElementById("nav-toggle")
-const navClose = document.getElementById("nav-close")
+/*=============== MOBILE MENU ===============*/
+const navbarMenuElement = document.getElementById("nav-menu")
+const navbarToggleButton = document.getElementById("nav-toggle")
+const navbarCloseButton = document.getElementById("nav-close")
 
-// Show Menu
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu")
+// ------ Show Menu
+// when clicked on btn, add classname to the menu element to show it
+if (navbarToggleButton) {
+    navbarToggleButton.addEventListener("click", () => {
+        navbarMenuElement.classList.add("show-menu")
     })
 }
 
-// Hide Menu
-if (navClose) {
-    navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu")
+// remove classname from the menu element
+const hideMenu = () => {
+    navbarMenuElement.classList.remove("show-menu")
+}
+
+// check if contains class name, returns boolean
+const isMenuVisible = () => {
+    return navbarMenuElement.classList.contains("show-menu")
+}
+
+// check if the click is inside the menu or on the toggle button, returns boolean
+const isClickInsideMenuOrToggle = (event) => {
+    return event.target.closest("#nav-menu") || event.target.closest("#nav-toggle")
+}
+
+// ------ Hide Menu
+// when clicked on btn, remove classname from the menu element to hide it
+if (navbarCloseButton) {
+    navbarCloseButton.addEventListener("click", () => {
+        hideMenu()
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLinks = document.querySelectorAll(".nav__link")
+// when is clicked on document, first check if conditions are filled, if true, hide the menu
+document.addEventListener("click", (event) => {
+    // if menu is visible and if is not clicked inside the menu
+    if (isMenuVisible() && !isClickInsideMenuOrToggle(event)) {
+        hideMenu()
+    }
+})
+
+/*=============== REMOVE MENU MOBILE AFTER CLICKED LINK ===============*/
+const navbarLinks = document.querySelectorAll(".nav__link")
 
 const linkAction = () => {
-    const navMenu = document.getElementById("nav-menu")
+    const navbarMenuElement = document.getElementById("nav-menu")
     // click each nav__link to remove the show-menu class
-    navMenu.classList.remove("show-menu")
+    navbarMenuElement.classList.remove("show-menu")
 }
 
-navLinks.forEach((link) => {
+navbarLinks.forEach((link) => {
     link.addEventListener("click", linkAction)
 })
 
@@ -39,7 +64,7 @@ const blurHeader = () => {
 window.addEventListener("scroll", blurHeader)
 
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contact-form")
+const contactFormElement = document.getElementById("contact-form")
 const contactMessage = document.getElementById("contact-message")
 
 const sendEmail = (e) => {
@@ -55,7 +80,7 @@ const sendEmail = (e) => {
                 contactMessage.textContent = ""
             }, 5000)
             setTimeout(() => {
-                contactForm.reset()
+                contactFormElement.reset()
             }, 3000)
         },
         () => {
@@ -64,7 +89,7 @@ const sendEmail = (e) => {
         }
     )
 }
-contactForm.addEventListener("submit", sendEmail)
+contactFormElement.addEventListener("submit", sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -75,17 +100,17 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll("section[id]")
+const allSections = document.querySelectorAll("section[id]")
 const activateMenuLink = () => {
     const scrollY = window.scrollY
 
-    sections.forEach((currentSection) => {
-        const sectionHeight = currentSection.offsetHeight
-        const sectionTop = currentSection.offsetTop - 58
-        const sectionId = currentSection.getAttribute("id")
-        const sectionsClass = document.querySelector(`.nav__menu a[href*='${sectionId}']`)
+    allSections.forEach((currentSection) => {
+        const currentSectionHeight = currentSection.offsetHeight
+        const currentSectionTop = currentSection.offsetTop - 58
+        const currentSectionId = currentSection.getAttribute("id")
+        const sectionsClass = document.querySelector(`.nav__menu a[href*='${currentSectionId}']`)
 
-        if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+        if (scrollY > currentSectionTop && scrollY < currentSectionTop + currentSectionHeight) {
             sectionsClass.classList.add("active-link")
         } else {
             sectionsClass.classList.remove("active-link")
@@ -95,14 +120,14 @@ const activateMenuLink = () => {
 window.addEventListener("scroll", activateMenuLink)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
+const scrollReveal = ScrollReveal({
     origin: "top",
     distance: "60px",
     duration: 2000,
     delay: 400,
 })
-sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
-sr.reveal(`.home__image`, { origin: "bottom" })
-sr.reveal(`.about__data, .skills__data`, { origin: "left" })
-sr.reveal(`.about__image, .skills__content`, { origin: "right" })
-sr.reveal(`.services__card, .projects__card`, { interval: 100 })
+scrollReveal.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
+scrollReveal.reveal(`.home__image`, { origin: "bottom" })
+scrollReveal.reveal(`.about__data, .skills__data`, { origin: "left" })
+scrollReveal.reveal(`.about__image, .skills__content`, { origin: "right" })
+scrollReveal.reveal(`.services__card, .projects__card`, { interval: 100 })
