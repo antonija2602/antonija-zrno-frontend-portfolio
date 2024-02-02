@@ -39,11 +39,13 @@ Uses the ScrollReveal library to animate elements on the page when they come int
 These features collectively enhance the user experience and add interactivity to the website. 
 
 ## Future 
+1. Hide the mobile menu with a click outside of the menu:
+Enhance user experience by concealing the mobile menu with a single click anywhere outside of its area on the screen   
 
-1. Switch between light and dark themes:
+2. Switch between light and dark themes:
 A single button facilitates the toggling of themes based on user preferences.
 
-2. Include and enable download for CV:
+3. Include and enable download for CV:
 The concept is to consolidate all essential showcase elements in a single location, simplifying the user experience and streamlining the process for both users and recruiters.
 
 ## Contact
