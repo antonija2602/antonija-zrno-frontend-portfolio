@@ -341,6 +341,12 @@ svg {
     display: none;
 }
 
+.home__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 5rem;
+}
+
 /*=============== BUTTON ===============*/
 .button {
     display: inline-block;
@@ -716,6 +722,10 @@ svg {
     .home__img {
         width: 300px;
         display: grid;
+    }
+    .home__buttons {
+        justify-content: start;
+        column-gap: 3rem;
     }
     .about__data {
         order: 1;
