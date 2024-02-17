@@ -783,9 +783,6 @@ svg {
     .home__content {
         row-gap: 2.5rem;
     }
-    .home__description {
-        margin-block: 1.5rem 2.5rem;
-    }
     .home__social {
         column-gap: 1.5rem;
     }
@@ -801,9 +798,6 @@ svg {
         column-gap: 4.5rem;
         padding-bottom: 1rem;
     }
-    .about__description {
-        margin-bottom: 3rem;
-    }
     .about__image {
         height: 400px;
     }
@@ -816,9 +810,6 @@ svg {
         grid-template-columns: 400px 425px;
         column-gap: 10rem;
         padding-bottom: 4rem;
-    }
-    .skills__description {
-        margin-bottom: 3rem;
     }
     .skills__content {
         column-gap: 8rem;
